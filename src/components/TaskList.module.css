@@ -1,0 +1,65 @@
+.task {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+    padding: 1em;
+}
+
+.task_done {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+    padding: 1em;
+    background-color: rgba(50,205,50, 0.6);
+
+}
+
+.details {
+    text-align: left;
+}
+
+.details h4 {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.details h4, p {
+    margin-top: 1.5em;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.actions i {
+    margin-bottom: .5em;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #282c34;
+    color: #FFF;
+    padding: .4em;
+    transition: .4s;
+}
+
+.actions i:hover {
+    color: #61dafb;
+}
+
+.actions i:nth-child(4):hover {
+    color: 	#FF0000;
+}
+
+.status::after {
+    content: "Não concluído"
+}
+
+.status_done::after {
+    content: "Concluído"
+}
